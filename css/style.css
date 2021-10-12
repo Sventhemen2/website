@@ -183,9 +183,9 @@ header {
 }
 
 .poster-hardcore {
-display: flex; 
-margin: 0 auto; 
-align-items: center;
+  display: flex; 
+  margin: 0 auto; 
+  align-items: center;
 }
 
 
@@ -451,31 +451,31 @@ li:hover {
 }
 
 a {
-color: black;
-text-decoration: none;
-list-style: none;
+  color: black;
+  text-decoration: none;
+  list-style: none;
 }
 
 .contact-info {
-font-size: 20px;
+  font-size: 20px;
 }
 
 .werk-images {
-height: 1100px;
-background-color: white;
-display: grid;
-grid-template-columns: 50vw 50vw;
-grid-row: 30vh 30vh 30vh;
+  height: 1100px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 50vw 50vw;
+  grid-row: 30vh 30vh 30vh;
 }
 
 .hover01 figure img {
-margin-left: 20vw;
-grid-column: 1/2;
-grid-row: 1/2;
--webkit-transform: scale(1);
-transform: scale(1);
--webkit-transition: .3s ease-in-out;
-transition: .3s ease-in-out;
+  margin-left: 20vw;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .hover01 figure:hover img {
@@ -484,33 +484,139 @@ transition: .3s ease-in-out;
 }
 
 .hover02 figure img {
-margin-left: 10vw;
-grid-column: 1/2;
-grid-row: 1/2;
--webkit-transform: scale(1);
-transform: scale(1);
--webkit-transition: .3s ease-in-out;
-transition: .3s ease-in-out;
+  margin-left: 10vw;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
-.hover02 figure:hover img {
--webkit-transform: scale(1.3);
-transform: scale(1.3);
+
+  .hover02 figure:hover img {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
 }
 
 .hover03 figure img {
-margin-top: 40px;
-margin-left: 10vw;
-grid-column: 1/2;
-grid-row: 1/2;
--webkit-transform: scale(1);
-transform: scale(1);
--webkit-transition: .3s ease-in-out;
-transition: .3s ease-in-out;
+  margin-top: 40px;
+  margin-left: 10vw;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .hover03 figure:hover img {
--webkit-transform: scale(1.3);
-transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.solicitatie-video {
+  width: 600px;
+}
+
+.motor-sven {
+  width: 60%;
+  height: 60%;
+}
+
+
+@media (max-width: 390px) {
+
+  body.homepage {
+  max-width: 390px;
+  display: block;
+  }
+
+  .header {
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  z-index: 9999;
+  background-color: black;
+  -webkit-box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.89);
+  -moz-box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.89);
+  box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.89);
+  }
+  
+  .article-1 {
+  background-color:white;
+  padding: 3vh 1vh;
+  text-align: center;
+  height: 400px;
+  }
+
+  h2 {
+  text-align: center;
+  }
+
+  .kleinetekst {
+  margin-top: 170px;
+
+  }
+
+  .article-2 {
+  background-color:white;
+  padding: 2vh ;
+    }
+
+  .solicitatie-video {
+  width: 340px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  }
+  
+  .article-3 {
+  background-color: red;
+  padding: 1vh;
+  }
+
+  .motor-sven {
+  width: 80%;
+  height: 80%;
+  }
+
+  .hover03 figure img {
+  margin-top: 40px;
+  margin-left: 10vw;
+  }
+  
+  .article-video {
+  background-color: white;
+  padding: 5vh;
+  grid-column: 1/2;
+  grid-row: 3/4;
+  }
+  
+  .article-video-2 {
+  background-color: white;
+  padding: 5vh;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  }
+
+  .article-4 {
+  background-color:red;
+  padding: 1vh;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  }
+  
+  .article-5 {
+  background-color: white;
+  padding: 0vh;
+  grid-column: 1/3;
+  grid-row: 4/5;
+  }
+
+  .text-right {
+  text-align: center!important;
+  }
+
 }
  
 
