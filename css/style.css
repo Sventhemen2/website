@@ -524,7 +524,7 @@ a {
 }
 
 
-@media (max-width: 390px) {
+@media (max-width: 420px) {
 
   body.homepage {
   max-width: 390px;
