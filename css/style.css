@@ -1,0 +1,521 @@
+/* CSS reset, dit niet aanpassen! */
+
+html {
+  scroll-behavior: smooth;
+}
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  }
+
+body.homepage {
+  display: grid; 
+  grid-template-columns: 50vw 50vw;
+  grid-template-rows: 10vh 80vh 80vh 160vh;
+}
+
+body.werk{
+  display: grid; 
+  grid-template-columns: 50vw 50vw;
+  grid-template-rows: 10vh 70vh;
+}
+
+body.contact {
+  display: grid;
+  grid-template-columns: 50vw 50vw;
+  grid-template-rows: 10vh 80vh;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  }
+
+header {
+  grid-column: 1/3 ;
+  grid-row: 1/2;
+  background-color:black;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header {
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  z-index: 9999;
+  background-color: black;
+  -webkit-box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.89);
+  -moz-box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.89);
+  box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.89);
+}
+
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  ;
+}
+
+.header a {
+  margin-left: 20px;
+  background-color:white;
+  color: black;
+  border-radius: 5px;
+}
+
+.header a:hover {
+  background-color: red;
+  color: black;
+}
+
+.header a.active {
+  background-color: red;
+  color: white;
+}
+
+.header-right {
+  float: right;
+  padding: 20px;
+  margin-right: 50px;
+}
+
+.article-1 {
+  background-color:white;
+  padding: 15vh 20vh;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.article-2 {
+  background-color:white;
+  padding: 15vh 10vh;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  }
+
+.article-3 {
+  background-color: red;
+  padding: 5vh 20vh;
+  grid-column: 1/2;
+  grid-row: 3/4;
+  }
+
+.article-video {
+  background-color: white;
+  padding: 5vh 20vh;
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.article-video-2 {
+  background-color: white;
+  padding: 5vh 10vh;
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+.button {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 0 auto;
+  width: 110px;
+  padding: 8px;
+  border: 2px solid;
+  border-color:black;
+  background-color: white;
+  transition: 0.35s;
+  }
+
+.button-2 {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 0 auto;
+  margin-top: 60px;
+  width: 150px;
+  padding: 8px;
+  border: 2px solid;
+  border-color:black;
+  background-color: white;
+  }
+
+.button a, active {
+  text-decoration: none;
+  color:black;
+  }
+  
+.button a:hover {
+  text-decoration: none;
+  color: black;
+  }
+
+.button:hover {
+  color: black;
+  background-color: white;
+  border-color: white;
+  transition: 0.35s;
+  }
+
+.article-4 {
+  background-color:red;
+  padding: 5vh 20vh;
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+.article-5 {
+  background-color: white;
+  padding: 5vh 20vh;
+  grid-column: 1/3;
+  grid-row: 4/5;
+}
+
+.poster-hardcore {
+display: flex; 
+margin: 0 auto; 
+align-items: center;
+}
+
+
+@keyframes tonext {
+  75% {
+    left: 0;
+  }
+  95% {
+    left: 100%;
+  }
+  98% {
+    left: 100%;
+  }
+  99% {
+    left: 0;
+  }
+}
+
+@keyframes tostart {
+  75% {
+    left: 0;
+  }
+  95% {
+    left: -300%;
+  }
+  98% {
+    left: -300%;
+  }
+  99% {
+    left: 0;
+  }
+}
+
+@keyframes snap {
+  96% {
+    scroll-snap-align: center;
+  }
+  97% {
+    scroll-snap-align: none;
+  }
+  99% {
+    scroll-snap-align: none;
+  }
+  100% {
+    scroll-snap-align: center;
+  }
+}
+
+
+* {
+  box-sizing: border-box;
+  scrollbar-color: transparent transparent; 
+  scrollbar-width: 0px;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: none;
+}
+
+* {
+  -ms-overflow-style: none;
+}
+
+ol, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel {
+  position: relative;
+  padding-top: 75%;
+  filter: drop-shadow(0 0 10px #0003);
+  perspective: 100px;
+}
+
+.carousel__viewport {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  overflow-x: scroll;
+  counter-reset: item;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel__slide {
+  position: relative;
+  flex: 0 0 100%;
+  width: 90%;
+  background-color:white;
+  counter-increment: item;
+}
+
+.carousel__slide:nth-child(even) {
+  background-color:black;
+}
+
+.carousel__slide:before {
+  content: counter(item);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%,-40%,70px);
+  color: #fff;
+  font-size: 2em;
+}
+
+.carousel__snapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: center;
+}
+
+@media (hover: hover) {
+  .carousel__snapper {
+  animation-name: tonext, snap;
+  animation-timing-function: ease;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  }
+
+  .carousel__slide:last-child .carousel__snapper {
+  animation-name: tostart, snap;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel__snapper {
+  animation-name: none;
+  }
+}
+
+.carousel:hover .carousel__snapper,
+.carousel:focus-within .carousel__snapper {
+  animation-name: none;
+}
+
+.carousel__navigation {
+  position: absolute;
+  right: 0;
+  bottom: 3;
+  left: 0;
+  text-align: center;
+  
+}
+
+.carousel__navigation-list,
+.carousel__navigation-item {
+  display: inline-block;
+}
+
+.carousel__navigation-button {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #333;
+  background-clip: content-box;
+  border: 0.25rem solid transparent;
+  border-radius: 50%;
+  font-size: 0;
+  transition: transform 0.1s;
+}
+
+.carousel::before,
+.carousel::after,
+.carousel__prev,
+.carousel__next {
+  position: absolute;
+  top: 0;
+  margin-top: 37.5%;
+  width: 4rem;
+  height: 4rem;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  font-size: 0;
+  outline: 0;
+}
+
+.carousel::before,
+.carousel__prev {
+  left: -1rem;
+}
+
+.carousel::after,
+.carousel__next {
+  right: -1rem;
+}
+
+.carousel::before,
+.carousel::after {
+  content: '';
+  z-index: 1;
+  background-color: #333;
+  background-size: 1.5rem 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #fff;
+  font-size: 2.5rem;
+  line-height: 4rem;
+  text-align: center;
+  pointer-events: none;
+}
+
+.carousel::before {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,50 80,100 80,0' fill='%23fff'/%3E%3C/svg%3E");
+}
+
+.carousel::after {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
+}
+
+.go-to-top {
+  position: fixed; 
+  right: 20px;
+  bottom: 80px; 
+}
+
+.go-to-top hover {
+  color: red; ;
+}
+
+footer {
+  grid-column: 1/3;
+  grid-row: 5/6; 
+  background-color: black;
+}
+
+.fa, .fas {
+  font-family: 'FontAwesome';
+}
+
+.social-icon {
+  color: #fff;
+  background: #221B14; 
+  font-size:2em;
+  border-radius: 50%;
+  line-height: 2.2em;
+  width: 2.1em;
+  height: 2.1em;
+  text-align: center;
+  display: inline-block;
+}
+
+li:hover {
+  transform: translateY(-8px);
+  transition:0.3s;
+}
+
+a {
+color: black;
+text-decoration: none;
+list-style: none;
+}
+
+.contact-info {
+font-size: 20px;
+}
+
+.werk-images {
+height: 1100px;
+background-color: white;
+display: grid;
+grid-template-columns: 50vw 50vw;
+grid-row: 30vh 30vh 30vh;
+}
+
+.hover01 figure img {
+margin-left: 20vw;
+grid-column: 1/2;
+grid-row: 1/2;
+-webkit-transform: scale(1);
+transform: scale(1);
+-webkit-transition: .3s ease-in-out;
+transition: .3s ease-in-out;
+}
+
+.hover01 figure:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+.hover02 figure img {
+margin-left: 10vw;
+grid-column: 1/2;
+grid-row: 1/2;
+-webkit-transform: scale(1);
+transform: scale(1);
+-webkit-transition: .3s ease-in-out;
+transition: .3s ease-in-out;
+}
+.hover02 figure:hover img {
+-webkit-transform: scale(1.3);
+transform: scale(1.3);
+}
+
+.hover03 figure img {
+margin-top: 40px;
+margin-left: 10vw;
+grid-column: 1/2;
+grid-row: 1/2;
+-webkit-transform: scale(1);
+transform: scale(1);
+-webkit-transition: .3s ease-in-out;
+transition: .3s ease-in-out;
+}
+
+.hover03 figure:hover img {
+-webkit-transform: scale(1.3);
+transform: scale(1.3);
+}
+ 
+
+
+   
+  
+
+
